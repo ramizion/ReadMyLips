@@ -1,0 +1,59 @@
+.root {
+-fx-base: rgb(0, 0, 0);
+-fx-background: rgb(0, 0, 0);
+-fx-control-inner-background:  rgb(0, 0, 0);
+}
+ 
+.tab {
+-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+ 
+.menu-bar {
+-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,90%));
+}
+ 
+.tool-bar:horizontal {
+-fx-background-color:
+linear-gradient(to bottom, derive(-fx-base,+90%), derive(-fx-base,-90%), derive(-fx-base,-0%));
+}
+ 
+ .pane {
+    -fx-background-color: #e8e9f2;
+}
+
+.vbox {
+    -fx-background-size: 600, 100;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: #e8e9f2;
+    -fx-border-width: 1px;
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}
+
+
+.text-area {
+    -fx-font-size: 10pt;
+}
+
+.text-area *.text {
+    -fx-text-alignment: right;
+}
+
+.bordered-titled-title {
+  -fx-translate-x:  8;
+  -fx-translate-y: -10;
+  -fx-padding: 0 0 0 4;
+  -fx-background-color: -fx-background;
+}
+
+.bordered-titled-border {
+  -fx-content-display: top;
+  -fx-border-insets: 2 0 0 0;
+  -fx-border-color: -fx-text-box-border;
+  -fx-border-width: 2;
+}
+
+.bordered-titled-content {
+  -fx-padding: 18 5 5 5;
+}
+
